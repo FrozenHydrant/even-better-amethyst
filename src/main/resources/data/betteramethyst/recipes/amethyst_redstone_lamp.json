@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "AGA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:redstone"
+        },
+		"G": {
+			"item": "betteramethyst:amethyst_crystal_lamp"
+		}
+    },
+    "result": {
+        "item": "betteramethyst:amethyst_redstone_lamp",
+        "count": 1
+    }
+}
