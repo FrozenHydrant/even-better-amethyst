@@ -1,12 +1,14 @@
 {
   "replace": false,
   "values": [
+    "betteramethyst:smooth_amethyst_crystal_block",
+    "betteramethyst:chiseled_amethyst_crystal_block",
     "betteramethyst:amethyst_crystal_block",
     "betteramethyst:amethyst_crystal_lamp",
     "betteramethyst:amethyst_redstone_lamp",
-	"betteramethyst:amethyst_bricks",
-	"betteramethyst:amethyst_bricks_slab",
-	"betteramethyst:amethyst_bricks_stairs",
-	"betteramethyst:amethyst_bricks_wall"
+	  "betteramethyst:amethyst_bricks",
+	  "betteramethyst:amethyst_bricks_slab",
+	  "betteramethyst:amethyst_bricks_stairs",
+	  "betteramethyst:amethyst_bricks_wall"
   ]
 }
