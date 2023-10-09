@@ -2,10 +2,8 @@ package betathunder.betteramethyst;
 
 import betathunder.betteramethyst.common.blocks.ModBlocks;
 import betathunder.betteramethyst.common.items.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -34,8 +32,6 @@ public class BetterAmethyst
         modEventBus.addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
         modEventBus.addListener(this::processIMC);
-        // get blocks registered
-        modEventBus.addListener(this::buildContents);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -66,14 +62,6 @@ public class BetterAmethyst
     public void onServerStarting(ServerStartingEvent event) {
         // do something when the server starts
         //LOGGER.info("HELLO from server starting");
-    }
-    public void buildContents(CreativeModeTabEvent.BuildContents event) {
-        // Add to blocks tab
-        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
-            for (RegistryObject<Block> block: ModBlocks.BLOCKS.getEntries()) {
-                event.accept(block);
-            }
-        }
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD

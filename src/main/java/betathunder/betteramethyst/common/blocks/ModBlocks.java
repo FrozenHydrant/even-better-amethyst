@@ -3,6 +3,7 @@ package betathunder.betteramethyst.common.blocks;
 import betathunder.betteramethyst.BetterAmethyst;
 import betathunder.betteramethyst.common.items.ModItems;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
@@ -35,8 +36,9 @@ public class ModBlocks {
 	}
 	
 	public static void registerBlockItem(String name, RegistryObject<Block> b) {
-		ModItems.registerItem(name, () -> new BlockItem(b.get(), new Item.Properties()));
+		ModItems.registerItem(name, () -> new BlockItem(b.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 	}
+	
 	public static void registerBlocks(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
 	}
