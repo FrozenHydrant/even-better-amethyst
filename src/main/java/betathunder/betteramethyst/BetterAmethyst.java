@@ -2,7 +2,6 @@ package betathunder.betteramethyst;
 
 import betathunder.betteramethyst.common.blocks.ModBlocks;
 import betathunder.betteramethyst.common.items.ModItems;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,7 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.RegistryObject;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("betteramethyst")
