@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "betteramethyst:amethyst_crystal_block"
+  },
+  "result": "betteramethyst:smooth_amethyst_crystal_block"
+}

@@ -18,7 +18,8 @@ import java.util.function.Supplier;
 public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BetterAmethyst.MOD_ID);
 	
-	
+	public static final RegistryObject<Block> CHISELED_AMETHYST_CRYSTAL_BLOCK = registerBlock("chiseled_amethyst_crystal_block", () -> new Block(Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(3f, 9f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> SMOOTH_AMETHYST_CRYSTAL_BLOCK = registerBlock("smooth_amethyst_crystal_block", () -> new Block(Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(3f, 9f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMETHYST_CRYSTAL_BLOCK = registerBlock("amethyst_crystal_block", () -> new Block(Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(3f, 9f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMETHYST_CRYSTAL_LAMP = registerBlock("amethyst_crystal_lamp", () -> new Block(Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0.3f, 0.3f).lightLevel((b) -> {return 15;})));
 	public static final RegistryObject<Block> AMETHYST_REDSTONE_LAMP = registerBlock("amethyst_redstone_lamp", () -> new RedstoneLampBlock(Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(0.3f, 0.3f).lightLevel((b) -> {if (b.getValue(RedstoneLampBlock.LIT)) {return 15;} else {return 0;}})));
@@ -37,6 +38,7 @@ public class ModBlocks {
 	public static void registerBlockItem(String name, RegistryObject<Block> b) {
 		ModItems.registerItem(name, () -> new BlockItem(b.get(), new Item.Properties()));
 	}
+	
 	public static void registerBlocks(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
 	}
