@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "betteramethyst:smooth_amethyst_crystal_block"
+          "name": "betteramethyst:chiseled_amethyst_crystal_block"
         }
       ],
       "conditions": [
