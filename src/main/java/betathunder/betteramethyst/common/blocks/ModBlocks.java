@@ -25,7 +25,7 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> AMETHYST_BRICKS = registerBlock("amethyst_bricks", () -> new Block(Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 6f).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> AMETHYST_BRICKS_SLAB = registerBlock("amethyst_bricks_slab", () -> new SlabBlock(Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 6f).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> AMETHYST_BRICKS_STAIRS = registerBlock("amethyst_bricks_stairs", () -> new StairBlock(() -> AMETHYST_BRICKS.get().defaultBlockState(), Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 6f).requiresCorrectToolForDrops()));
+	public static final RegistryObject<Block> AMETHYST_BRICKS_STAIRS = registerBlock("amethyst_bricks_stairs", () -> new StairBlock(AMETHYST_BRICKS.get().defaultBlockState(), Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 6f).requiresCorrectToolForDrops())); 
 	public static final RegistryObject<Block> AMETHYST_BRICKS_WALL = registerBlock("amethyst_bricks_wall", () -> new WallBlock(Properties.of().sound(SoundType.AMETHYST).strength(1.5f, 6f).requiresCorrectToolForDrops()));
 
 	public static RegistryObject<Block> registerBlock(String name, Supplier<Block> b) {

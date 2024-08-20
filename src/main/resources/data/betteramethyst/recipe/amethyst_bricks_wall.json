@@ -11,7 +11,7 @@
         }
     },
     "result": {
-        "item": "betteramethyst:amethyst_bricks_wall",
+        "id": "betteramethyst:amethyst_bricks_wall",
         "count": 6
     }
 }

@@ -14,7 +14,7 @@
 		}
     },
     "result": {
-        "item": "betteramethyst:amethyst_redstone_lamp",
+        "id": "betteramethyst:amethyst_redstone_lamp",
         "count": 1
     }
 }

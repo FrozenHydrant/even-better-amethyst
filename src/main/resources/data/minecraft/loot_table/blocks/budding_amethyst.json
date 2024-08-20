@@ -2,39 +2,38 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "minecraft:budding_amethyst",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": 1
                         }
-                      }
-                    ]
+                      ]
+                    }
                   }
                 }
-              ],
-              "name": "minecraft:budding_amethyst"
+              ]
             },
             {
               "type": "minecraft:item",
-              "functions": [
+              "name": "minecraft:amethyst_block",
+              "conditions": [
                 {
-                  "function": "minecraft:explosion_decay"
+                  "condition": "minecraft:survives_explosion"
                 }
-              ],
-              "name": "minecraft:amethyst_block"
+              ]
             }
           ]
         }

@@ -1,20 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        " A ",
-        "AGA",
-        " A "
+        "AAA",
+        "AAA",
+        "AAA"
     ],
     "key": {
         "A": {
             "item": "minecraft:amethyst_shard"
-        },
-		"G": {
-			"item": "minecraft:glowstone"
-		}
+        }
     },
     "result": {
-        "item": "betteramethyst:amethyst_crystal_lamp",
+        "id": "betteramethyst:amethyst_crystal_block",
         "count": 1
     }
 }
